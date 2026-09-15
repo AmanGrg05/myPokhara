@@ -1,14 +1,12 @@
-import Header from "./components/header";
-import HeroSection from "./components/heroSection";
-
+import { Routes, Route } from "react-router";
+import Home from "./pages/Home";
+import Explore from "./pages/Explore";
 const App = () => {
   return (
-    <div className="min-h-screen bg-background flex flex-col w-full overflow-x-hidden">
-      <Header />
-      <main className="flex-1 pb-24 md:pb-0">
-        <HeroSection />
-      </main>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/explore" element={<Explore />} />
+    </Routes>
   );
 };
 

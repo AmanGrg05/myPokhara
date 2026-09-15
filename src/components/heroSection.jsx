@@ -4,7 +4,7 @@ function HeroSection() {
   }
 
   return (
-    <section className="relative isolate min-h-170 overflow-hidden">
+    <section className="relative isolate min-h-[620px] overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 -z-20">
         <img
@@ -15,13 +15,13 @@ function HeroSection() {
       </div>
 
       {/* Image Overlay */}
-      <div className="absolute inset-0 -z-10 bg-linear-to-b from-[#f8f7f3]/85 via-[#f8f7f3]/65 to-[#f8f7f3]" />
+      <div className="absolute inset-0 -z-10 bg-linear-to-b from-[#f8f7f3]/65 via-[#f8f7f3]/75 to-[#f8f7f3]" />
 
       {/* Subtle image tint */}
       <div className="absolute inset-0 -z-10 bg-[#164a43]/5" />
 
       {/* Hero Content */}
-      <div className="mx-auto flex min-h-170 max-w-7xl items-center px-5 py-24 sm:px-8 lg:px-12">
+      <div className="mx-auto flex min-h-[620px] max-w-7xl items-center px-5 py-24 sm:px-8 lg:px-12">
         <div className="w-full">
           {/* Content Container */}
           <div className="mx-auto max-w-4xl text-center">

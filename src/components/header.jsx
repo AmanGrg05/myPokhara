@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 function Header() {
   return (
     <div>
@@ -5,7 +6,7 @@ function Header() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="../../public/mypokhara.jpg"
+              src="/mypokhara.jpg"
               alt="myPokhara"
               className="h-10 w-10 object-contain rounded-md"
             />
@@ -16,35 +17,36 @@ function Header() {
 
           <div className="hidden md:flex items-center gap-8">
             <nav className="flex items-center gap-6 text-sm font-medium text-muted-foreground">
-              <a
-                href="#"
-                className="text-primary font-semibold text-xl transition-colors"
+              <Link
+                to="/"
+                className="hover:text-primary text-[15px] transition-colors font-medium"
               >
                 Home
-              </a>
-              <a
-                href="#"
-                className="hover:text-primary text-xl transition-colors"
+              </Link>
+
+              <Link
+                to="/explore"
+                className="hover:text-primary text-[15px] transition-colors font-medium"
               >
                 Explore
-              </a>
-              <a
-                href="#"
-                className="hover:text-primary text-xl transition-colors"
+              </Link>
+              <Link
+                to="/services"
+                className="hover:text-primary text-[15px] transition-colors font-medium"
               >
                 Services
-              </a>
-              <a
-                href="#"
-                className="hover:text-primary text-xl transition-colors"
+              </Link>
+              <Link
+                to="/bookings"
+                className="hover:text-primary text-[15px] transition-colors font-medium"
               >
                 Bookings
-              </a>
+              </Link>
             </nav>
           </div>
 
           <div className="flex items-center gap-4">
-            <button className="rounded-full bg-[#0D3B3A] px-6 py-2 text-white hover:bg-[#0A302F] text-xl">
+            <button className="rounded-full bg-[#0D3B3A] px-6 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#0A302F]">
               Login
             </button>
           </div>
